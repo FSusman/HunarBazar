@@ -22,7 +22,7 @@ const Landing = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/api/courses")
+      .get("https://hunar-bak.netlify.app/.netlify/functions/app/api/courses")
       .then((response) => setCourses(response.data));
   }, []);
 

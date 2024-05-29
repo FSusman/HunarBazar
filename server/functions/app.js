@@ -12,6 +12,8 @@ const middleware = require("../utils/middleware");
 const logger = require("../utils/logger");
 const config = require("../utils/config");
 
+const serverless = require('serverless-http')
+
 mongoose.set("strictQuery", false);
 
 logger.info("connecting to", config.MONGODB_URI);
