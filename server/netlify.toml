@@ -1,0 +1,7 @@
+[build]
+  functions="./server/functions"
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
