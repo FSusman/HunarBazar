@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const loginUrl = "http://localhost:3001/api/login";
-const userUrl = "http://localhost:3001/api/users";
+const loginUrl = "https://hunarbazar.onrender.com/api/login";
+const userUrl = "https://hunarbazar.onrender.com/api/users";
 
 const login = async (credentials) => {
   const response = await axios.post(loginUrl, credentials);
