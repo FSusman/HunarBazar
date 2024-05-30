@@ -1,4 +1,4 @@
-import { MountainIcon } from "lucide-react";
+import { CheckCircleIcon, MountainIcon } from "lucide-react";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
