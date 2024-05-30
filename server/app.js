@@ -19,14 +19,14 @@ mongoose.connect(config.MONGODB_URI).then(() => {
   logger.info("connected to MongoDB");
 });
 
-app.use(cors());
+app.use(cors({ origin: "*", methods: "GET,HEAD,PUT,PATCH,POST,DELETE" }));
 app.use(express.static("dist"));
 app.use(express.json());
 app.use(middleware.requestLogger);
 
 app.use("/api/users", userRouter);
 app.use("/api/login", loginRouter);
-app.use('/api/courses', courseRouter)
+app.use("/api/courses", courseRouter);
 
 app.use(middleware.unknownEndpoint);
 app.use(middleware.errorHandler);
