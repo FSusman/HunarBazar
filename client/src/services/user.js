@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const loginUrl = "https://hunar-bak.netlify.app/.netlify/functions/app/api/login";
-const userUrl = "https://hunar-bak.netlify.app/.netlify/functions/app/api/users";
+const loginUrl = "http://localhost:3001/api/login";
+const userUrl = "http://localhost:3001/api/users";
 
 const login = async (credentials) => {
   const response = await axios.post(loginUrl, credentials);

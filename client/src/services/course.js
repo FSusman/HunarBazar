@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "https://hunar-bak.netlify.app/.netlify/functions/app/api/courses";
+const baseUrl = "http://localhost:3001/api/courses";
 
 const getCourses = async () => {
   const response = await axios.get(baseUrl);

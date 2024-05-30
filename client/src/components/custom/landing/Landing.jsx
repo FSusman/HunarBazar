@@ -22,7 +22,7 @@ const Landing = () => {
 
   useEffect(() => {
     axios
-      .get("https://hunar-bak.netlify.app/.netlify/functions/app/api/courses")
+      .get("http://localhost:3001/api/courses")
       .then((response) => setCourses(response.data));
   }, []);
 
@@ -87,7 +87,11 @@ const Landing = () => {
                   style={{
                     aspectRatio: "300/200",
                     objectFit: "cover",
+                    filter: "blur(10px)",
+                    transition: "filter 0.5s ease",
                   }}
+                  loading="lazy"
+                  onLoad={(e) => (e.target.style.filter = "blur(0px)")}
                 />
                 <CardContent className="p-4 space-y-2">
                   <h3 className="text-lg font-bold">{course.title}</h3>

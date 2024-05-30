@@ -72,7 +72,11 @@ const Dashboard = () => {
                         style={{
                           aspectRatio: "1/1",
                           objectFit: "cover",
+                          filter: "blur(20px)",
+                          transition: "filter 0.5s ease",
                         }}
+                        loading="lazy"
+                        onLoad={(e) => (e.target.style.filter = "blur(0px)")}
                       />
                       <div className="flex-1">
                         <h3 className="text-lg font-medium">{course.title}</h3>
@@ -132,7 +136,11 @@ const Dashboard = () => {
                       style={{
                         aspectRatio: "2/1",
                         objectFit: "cover",
+                        filter: "blur(20px)",
+                        transition: "filter 0.5s ease",
                       }}
+                      loading="lazy"
+                      onLoad={(e) => (e.target.style.filter = "blur(0px)")}
                     />
                     <CardContent className="p-4">
                       <h3 className="text-lg font-medium mb-2">
@@ -181,9 +189,12 @@ const Dashboard = () => {
                       src={course.courseThumbnail}
                       style={{
                         aspectRatio: "2/1",
-
                         objectFit: "cover",
+                        filter: "blur(20px)",
+                        transition: "filter 0.5s ease",
                       }}
+                      loading="lazy"
+                      onLoad={(e) => (e.target.style.filter = "blur(0px)")}
                     />
                     <CardContent className="p-4">
                       <h3 className="text-lg font-medium mb-2">

@@ -271,7 +271,12 @@ const Course = () => {
               style={{
                 aspectRatio: "1920/1080",
                 objectFit: "cover",
+                
+                filter: "blur(20px)",
+                transition: "filter 0.5s ease",
               }}
+              loading="lazy"
+              onLoad={(e) => (e.target.style.filter = "blur(0px)")}
             />
           </div>
         </div>
