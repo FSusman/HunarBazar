@@ -228,6 +228,8 @@ const Course = () => {
                     <div className=" items-center  space-y-2 w-full">
                       <form
                         className="space-y-4"
+                        name="contact-details"
+                        netlify
                         onSubmit={(e) => handleDetails(e)}
                       >
                         <div name="whatsInput">

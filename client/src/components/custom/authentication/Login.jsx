@@ -75,7 +75,7 @@ const Login = ({ setReturning }) => {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <form onSubmit={handleLogin}>
+        <form name='login' onSubmit={handleLogin} netlify >
           <div className="grid gap-4">
             <div className="grid gap-2 text-left">
               <Label htmlFor="username">Username</Label>
