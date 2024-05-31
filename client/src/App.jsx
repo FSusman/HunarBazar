@@ -10,20 +10,9 @@ import Course from "./components/custom/dashboard/Course";
 import { fetchUser } from "./reducers/userReducer";
 import { fetchCourses } from "./reducers/courseReducer";
 import PageNotFound from "./components/custom/extras/PageNotFound";
-import Loading from "./components/custom/extras/Loading";
+import axios from "axios";
 
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const authenticate = () =>
-      new Promise((resolve) => setTimeout(resolve, 2000)); // 2 seconds
-
-    authenticate().then(() => {
-      setLoading(false);
-    });
-  }, []);
-
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { pathname } = useLocation();
@@ -46,6 +35,15 @@ function App() {
     }
   }, [navigate]);
 
+  useEffect(() => {
+    async () => {
+    const response = await   axios.get("https://hunarbazar.onrender.com/api/users");
+  if (!response.ok ) {
+    <ErrorPage/>
+  }
+
+    };
+  }, []);
 
   return (
     <div className="font-geist overflow-y-hidden">

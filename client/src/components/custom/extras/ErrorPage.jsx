@@ -1,4 +1,4 @@
-import { GhostIcon } from "lucide-react";
+import { BombIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const PageNotFound = () => {
@@ -7,15 +7,15 @@ const PageNotFound = () => {
       <div className="max-w-md w-full space-y-6 text-center">
         <div className="relative flex    w-full max-w-[300px] mx-auto">
           <div className="mx-auto  ">
-            <GhostIcon className="w-16 h-16" />
+            <BombIcon className="w-16 h-16" />
           </div>
         </div>
         <div className="space-y-2">
           <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50">
-            Oops! Page not found
+            Internal server error!
           </h1>
           <p className="text-gray-500 dark:text-gray-400">
-            The page you're looking for doesn't exist or has been moved.
+            Please visit in a few minutes. Thank you for your co-operation
           </p>
         </div>
         <Link
