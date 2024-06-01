@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { Button } from "@/components/ui/button";
 
 import { Link } from "react-router-dom";
-import Loading from "../extras/Loading";
+import Loading from "../extra pages/LoadingPage";
 import { toast } from "sonner";
 import { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";

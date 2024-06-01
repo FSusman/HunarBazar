@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import Loading from "../extras/Loading";
+import Loading from "../extra pages/LoadingPage";
 import { Button } from "@/components/ui/button";
 import { HomeIcon } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";

@@ -6,10 +6,10 @@ import Onboarding from "./components/custom/landing/Onboarding";
 import Login from "./components/custom/authentication/Login";
 import Main from "./components/custom/dashboard/Main";
 import Dashboard from "./components/custom/dashboard/Dashboard";
-import Course from "./components/custom/dashboard/Course";
+import Course from "./components/custom/dashboard/course/Course";
 import { fetchUser } from "./reducers/userReducer";
 import { fetchCourses } from "./reducers/courseReducer";
-import PageNotFound from "./components/custom/extras/PageNotFound";
+import PageNotFound from "./components/custom/extra pages/PageNotFound";
 import CoursePlayer from "./components/custom/dashboard/CoursePlayer";
 import axios from "axios";
 
