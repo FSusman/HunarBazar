@@ -10,6 +10,7 @@ import Course from "./components/custom/dashboard/Course";
 import { fetchUser } from "./reducers/userReducer";
 import { fetchCourses } from "./reducers/courseReducer";
 import PageNotFound from "./components/custom/extras/PageNotFound";
+import CoursePlayer from "./components/custom/dashboard/CoursePlayer";
 import axios from "axios";
 
 function App() {
@@ -37,11 +38,10 @@ function App() {
 
   useEffect(() => {
     async () => {
-    const response = await   axios.get("https://hunarbazar.onrender.com/api/users");
-  if (!response.ok ) {
-    <ErrorPage/>
-  }
-
+      const response = await axios.get("http://localhost:3001/api/users");
+      if (!response.ok) {
+        <ErrorPage />;
+      }
     };
   }, []);
 
@@ -61,6 +61,7 @@ function App() {
         <Route path="/dashboard" element={<Main component={Dashboard} />} />
         <Route path="/courses/:id" element={<Main component={Course} />} />
         <Route path="*" element={<PageNotFound />} />
+        <Route path="/course/:id" element={<Main component={CoursePlayer} />} />
       </Routes>
     </div>
   );

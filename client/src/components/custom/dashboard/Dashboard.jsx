@@ -96,16 +96,18 @@ const Dashboard = () => {
                       </div>
                     </div>
                     <div className="w-full ">
-                      <Button
-                        className="ml-auto"
-                        onClick={() =>
-                          toast("Courses are under development.", {
-                            description: "Thank you for registering.",
-                          })
-                        }
-                      >
-                        Continue
-                      </Button>
+                      <Link to={`/course/${course.id}`}>
+                        <Button
+                          className="ml-auto"
+                          onClick={() =>
+                            toast("Courses are under development.", {
+                              description: "Thank you for registering.",
+                            })
+                          }
+                        >
+                          Continue
+                        </Button>
+                      </Link>
                     </div>
                   </CardContent>
                 </Card>

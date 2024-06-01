@@ -22,7 +22,7 @@ const Landing = () => {
 
   useEffect(() => {
     axios
-      .get("https://hunarbazar.onrender.com/api/courses")
+      .get("http://localhost:3001/api/courses")
       .then((response) => setCourses(response.data));
   }, []);
 
