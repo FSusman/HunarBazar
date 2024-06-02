@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:3001/api/courses";
+const baseUrl = "https://hunarbazar.onrender.com/api/courses";
 
 const getCourses = async () => {
   const response = await axios.get(baseUrl);

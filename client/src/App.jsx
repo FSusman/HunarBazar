@@ -38,7 +38,9 @@ function App() {
 
   useEffect(() => {
     async () => {
-      const response = await axios.get("http://localhost:3001/api/users");
+      const response = await axios.get(
+        "https://hunarbazar.onrender.com/api/users"
+      );
       if (!response.ok) {
         <ErrorPage />;
       }
