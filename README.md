@@ -1,4 +1,5 @@
 # HunarBazar
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a419dd9b-ee10-4578-bd64-a182ea28f9de/deploy-status)](https://app.netlify.com/sites/hunarbazar/deploys)
 
 Welcome to HunarBazar! This project is a platform where users can browse, enroll, and participate in various courses. The website features a smooth onboarding process, user authentication, and a dashboard for managing enrolled courses.
 
