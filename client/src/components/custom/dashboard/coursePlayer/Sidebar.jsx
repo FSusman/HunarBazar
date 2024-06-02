@@ -1,5 +1,6 @@
-const { Button } = require("@/components/ui/button");
-const { HomeIcon } = require("lucide-react");
+import { Button } from "@/components/ui/button";
+import { HomeIcon } from "lucide-react";
+
 
 const Sidebar = () => {
   return (
