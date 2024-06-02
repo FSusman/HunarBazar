@@ -68,3 +68,19 @@ To get started with the project locally, follow these steps:
 
 
 ## Project Structure
+### Client
+![alt text](image.png)
+
+### Server
+![alt text](image-1.png)
+
+## Ending thoughts
+This was just made for practice and I wanted to learn new concepts like redux client-side state management and advanced axios actions. I also learnt about creating hooks to minimize redundant code. The code is as scaleable as I could make it. This project has around 5-10 hours of work put into it on and off which result in this. The main thing was that I learnt something and thats what matters
+
+- **Hours:** 5-10 hours
+- **Lines of Code:** 2000+ lines
+- **Packages:** 9 + 6 = 15 packages
+-  **Main Languages:** Javascript and JSX
+
+
+Feel free to explore and expand upon this project to suit your needs. Thank you for checking out HunarBazar!
