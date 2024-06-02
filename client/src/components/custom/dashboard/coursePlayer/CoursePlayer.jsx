@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import Loading from "../extra pages/LoadingPage";
+import Loading from "../../extra pages/LoadingPage";
 import Sidebar from "./Sidebar";
 import Overview from "./Overview";
 import VideoPlayer from "./VideoPlayer";

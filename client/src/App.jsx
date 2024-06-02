@@ -10,7 +10,7 @@ import Course from "./components/custom/dashboard/course/Course";
 import { fetchUser } from "./reducers/userReducer";
 import { fetchCourses } from "./reducers/courseReducer";
 import PageNotFound from "./components/custom/extra pages/PageNotFound";
-import CoursePlayer from "./components/custom/dashboard/CoursePlayer";
+import CoursePlayer from "./components/custom/dashboard/coursePlayer/CoursePlayer";
 import axios from "axios";
 
 function App() {
